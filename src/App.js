@@ -76,6 +76,8 @@ function App() {
       <div className='recipe-container'>
           {
             // map through the recipes array and return a recipe component for each recipe
+            // use ternry operator to check if there is value in the recipes array. otherwise return <p>Loading...</p>
+            
           recipes.length > 0 ? recipes.map((recipe, index) =>{
             // destructure the recipe object. this only works if the variable name is the same as the object key
             const {title, image_url, publisher, source_url} = recipe;
@@ -88,7 +90,7 @@ function App() {
                 <a href={source_url}>Source</a>
               </div>
             )
-          }) : <p>Loading....</p>
+          }) : <p>Loading....</p> // show this if there is nothing in the recipes array
           }
       </div>
      
