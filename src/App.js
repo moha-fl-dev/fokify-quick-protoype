@@ -18,6 +18,20 @@ function App() {
   useEffect(() => {
 
     // anonymous function that runs after the component is rendered. and after every time the search input changes
+    
+    
+    /*
+    this is the same as doing:
+
+    function foo(){
+      ....
+    }
+
+    foo();
+
+    (async () =>{})(); this is a nameless fucntion that is immediately invoked.
+
+    */
     (async () =>{
 
       // get the recipes from the API. this is a promise. hence the await keyword
